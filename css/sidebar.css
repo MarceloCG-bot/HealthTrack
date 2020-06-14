@@ -1,0 +1,111 @@
+    div.flex-dashboard {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+    
+    sidebar {
+        display: block;
+        height: 100%;
+        width: 300px;
+        background-color: #fff;
+    }
+    
+    sidebar .sidebar-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        height: 90px;
+        border: 1px solid rgba(0, 0, 0, .0625);
+        border-right: 0px;
+    }
+    
+    sidebar .sidebar-title img {
+        height: 50px;
+        width: 100px;
+    }
+    
+    sidebar .sidebar-title h2 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
+    div.menu {
+        border-right: 1px solid rgba(0, 0, 0, .0625);
+    }
+    
+    div.menu ul {
+        list-style-type: none;
+    }
+    
+    div.menu ul li {
+        padding: 20px 20px;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    div.menu ul li svg {
+        color: #214753;
+        font-size: 20px;
+    }
+    
+    div.menu ul li a {
+        color: #286B7B;
+        margin-left: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    div.menu ul li a:hover {
+        color: #214753;
+    }
+    
+    .selected {
+        background-color: #f6f7f8;
+    }
+    
+    .selected a {
+        color: #214753 !important;
+    }
+    
+    .sidebar_logout {
+        display: none;
+    }
+    
+    .hide {
+        left: -300px;
+        position: absolute;
+    }
+    
+    @media screen and (max-width: 768px) {
+        sidebar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            transition: all .2s;
+            left: -300px;
+        }
+        .sidebar_logout {
+            display: block;
+        }
+    }
+    
+    @media screen and (max-width: 380px) {
+        sidebar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            transition: all .2s;
+            left: -300px;
+            width: 250px;
+        }
+        .sidebar_logout {
+            display: block;
+        }
+    }

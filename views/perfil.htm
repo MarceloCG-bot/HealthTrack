@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Health Track</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <script src="../plugins/sweetalert/dist/sweetalert2.min.css"></script>
+</head>
+
+<body>
+
+    <div class="flex-dashboard">
+        <sidebar id="sidebar">
+            <dv class="sidebar-title">
+                <img src="../images/heartbeat.png" alt="">
+                <h2>Health Track</h2>
+            </dv>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-house-user"></i>
+                        <a href="dashboard.htm">Dashboard</a>
+                    </li>
+                    <li class="selected">
+                        <i class="fas fa-user"></i>
+                        <a href="perfil.htm">Perfil</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-balance-scale-right"></i>
+                        <a href="gerenciarPeso.htm">Gerenciar Peso e Altura</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-heartbeat"></i>
+                        <a href="gerenciarPressao.htm">Gerenciar Pressão Arterial</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-dumbbell"></i>
+                        <a href="gerenciarAtividades.htm">Gerenciar Atividades Físicas</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-utensils"></i>
+                        <a href="gerenciarAlimentos.htm">Gerenciar Alimentos</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-calculator"></i>
+                        <a href="calcularIMC.htm">Calcular IMC</a>
+                    </li>
+                    <li class="sidebar_logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <a href="../index.htm">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main id="mainContent">
+            <header>
+                <i id="iconMenu" onclick="responsiveSidebar()" class="fas fa-bars"></i>
+                <a href="../index.htm"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>PERFIL</h2>
+                </div>
+                <div class="perfil-parent">
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <div class="img"></div>
+                        </div>
+                        <div class="perfil-form">
+                            <form id="form-perfil">
+                                <div class="form-group">
+                                    <label for="name">Nome completo</label>
+                                    <input type="text" class="form-control" name="nome" id="name" placeholder="Nome completo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="email" id="Email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cpf">CPF</label>
+                                    <input type="text" class="form-control" name="cpf" id="cpf" placeholder="Digite o seu CPF">
+                                </div>
+                                <div class="form-group">
+                                    <label for="idade">Idade</label>
+                                    <input type="text" class="form-control" name="idade" id="idade" placeholder="Idade">
+                                </div>
+                                <div class="form-group">
+                                    <label for="genre">Gênero</label>
+                                    <select name="genero" class="form-control" id="genre">
+                                      <option>Masculino</option>
+                                      <option>Feminino</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Senha</label>
+                                    <input type="password" name="senha" class="form-control" id="password" placeholder="Senha">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Confirmar senha</label>
+                                    <input type="password" name="confirmarSenha" class="form-control" id="password" placeholder="Senha">
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
+                                <button type="submit" class="btn">Salvar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
+    <script src="../plugins/sweetalert/dist/sweetalert2.all.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../plugins/fontawesome/js/all.min.js "></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/Perfil.js"></script>
+
+</body>
+
+</html>

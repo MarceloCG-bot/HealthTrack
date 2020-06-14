@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Health Track</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="flex-dashboard">
+        <sidebar id="sidebar">
+            <dv class="sidebar-title">
+                <img src="../images/heartbeat.png" alt="">
+                <h2>Health Track</h2>
+            </dv>
+            <div class="menu">
+                <ul>
+                    <li class="selected">
+                        <i class="fas fa-house-user"></i>
+                        <a href="dashboard.htm">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <a href="perfil.htm">Perfil</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-balance-scale-right"></i>
+                        <a href="gerenciarPeso.htm">Gerenciar Peso e Altura</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-heartbeat"></i>
+                        <a href="gerenciarPressao.htm">Gerenciar Pressão Arterial</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-dumbbell"></i>
+                        <a href="gerenciarAtividades.htm">Gerenciar Atividades Físicas</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-utensils"></i>
+                        <a href="gerenciarAlimentos.htm">Gerenciar Alimentos</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-calculator"></i>
+                        <a href="calcularIMC.htm">Calcular IMC</a>
+                    </li>
+                    <li class="sidebar_logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <a href="../index.htm">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main id="mainContent">
+            <header>
+                <i id="iconMenu" onclick="responsiveSidebar()" class="fas fa-bars"></i>
+                <a href="../index.htm"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>DASHBOARD</h2>
+                </div>
+                <div class="dashboard-content">
+                    <div class="dashboard-flex-parent">
+                        <div class="dashboard-box">
+                            <div class="dashboard-box-wrapper">
+                                <div class="box-icon box-weight">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <div class="value">80kg</div>
+                                <div class="type">PESO</div>
+                                <div class="box-value-percentual box-value-weight">
+                                    <i class="fas fa-chevron-up"></i> 10%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-box">
+                            <div class="dashboard-box-wrapper">
+                                <div class="box-icon box-pressure">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div class="value">12MMHg</div>
+                                <div class="type">PRESSÃO ARTERIAL</div>
+                                <div class="box-value-percentual box-value-pressure">
+                                    <i class="fas fa-chevron-up"></i>
+                                    <span>10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-box">
+                            <div class="dashboard-box-wrapper">
+                                <div class="box-icon box-imc">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <div class="value">23,2</div>
+                                <div class="type">IMC</div>
+                                <div class="box-value-percentual box-value-imc">
+                                    <span>NORMAL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-box">
+                            <div class="dashboard-box-wrapper">
+                                <div class="box-icon box-workout">
+                                    <i class="fas fa-biking"></i>
+                                </div>
+                                <div class="value">BICICLETA</div>
+                                <div class="type">Atividade física</div>
+                                <div class="box-value-percentual box-value-workout">
+                                    <i class="far fa-clock"></i>
+                                    <span>08/06/2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../plugins/fontawesome/js/all.min.js "></script>
+    <script src="../js/menu.js"></script>
+
+</body>
+
+</html>
